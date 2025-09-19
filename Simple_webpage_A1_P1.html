@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Webpage</title>
+  </head>
+  <style>
+    :root {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#app {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #app {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .intro {
+    font-size: 1rem;
+  }
+}
+
+/* Light hover effect for the card */
+#app:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+  </style>
+
+  <body>
+    <div id="app">
+      <header>
+        <h1>Karan Arora</h1>
+      </header>
+      <main>
+        <p class="intro"> 
+          Hello! Welcome to my personal webpage. I'm a passionate individual who enjoys learning new technologies and creating meaningful projects.I'm Karan Arora. I'm seeking an best option in IT industry. I'm Interesed in AI/ML and Data Science. My goal is to contribute to innovative project while continuosly learning and growing within a dynamic tech environment.        </p>
+      </main>
+    </div>
+  </body>
+</html>

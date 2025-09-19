@@ -1,0 +1,82 @@
+<!-- 14.	Hero Section – Design a hero section for a landing page with a large heading, a short description, and a call-to-action button.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        /* Basic body and container styling to center content */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Hero section container */
+        .hero-section {
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        /* Styling for the main heading */
+        .hero-title {
+            font-size: 3.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for the description */
+        .hero-description {
+            font-size: 1.25rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        /* Styling for the call-to-action button */
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #3498db;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-section">
+        <h1 class="hero-title">Welcome to Our Amazing Page</h1>
+        <p class="hero-description">
+            Discover a world of possibilities and unlock your potential with our innovative platform. We provide the tools and resources you need to succeed.
+        </p>
+        <a href="#" class="cta-button">Get Started Today</a>
+    </div>
+
+</body>
+</html>

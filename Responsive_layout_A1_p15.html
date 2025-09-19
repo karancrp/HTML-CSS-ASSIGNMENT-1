@@ -1,0 +1,89 @@
+<!-- 15.	Responsive Layout – Create 4 boxes in a single row using flexbox or CSS grid. Ensure that on smaller screens, they adjust to 2 boxes per row.  -->
+ 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Box Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            flex: 1 1 200px; /* This is the key to responsiveness */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 1 calc(50% - 20px); /* Adjust to 2 boxes per row */
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="container">
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>This is the first box. The layout will adapt to different screen sizes.</p>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>This box will be next to the first on larger screens and below it on smaller ones.</p>
+        </div>
+        </div>
+        <br>
+        <div>
+    <div class="container">
+        <div class="box">
+            <h2>Box 3</h2>
+            <p>This is the first box. The layout will adapt to different screen sizes.</p>
+        </div>
+        <div class="box">
+            <h2>Box 4</h2>
+            <p>This box will be next to the first on larger screens and below it on smaller ones.</p>
+        </div>
+        </div>
+        <br>
+
+        
+    </div>
+
+</body>
+</html>

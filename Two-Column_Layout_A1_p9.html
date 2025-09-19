@@ -1,0 +1,96 @@
+<!-- Two-Column Layout – Build a webpage layout where the left side contains text and the 
+right side contains an image. Use flexbox or CSS float. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f2f5;
+        }
+
+        /* Using Flexbox for the layout */
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden; /* Ensures child elements stay within the border radius */
+        }
+
+        .column {
+            flex: 1; /* Each column takes up equal space */
+            padding: 40px;
+        }
+
+        .left-column {
+            background-color: #e9ecef;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-column h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .left-column p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .right-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ced4da;
+        }
+
+        .right-column img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stacks columns vertically */
+            }
+            .left-column, .right-column {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="column left-column">
+        <h1>Welcome to Our Site</h1>
+        <p>This is a simple two-column layout example. The left column is dedicated to text content, providing information about our services and vision. We've used CSS Flexbox to create a responsive design that looks great on both desktops and mobile devices.</p>
+    </div>
+    <div class="column right-column">
+        <img src="https://via.placeholder.com/500" alt="Placeholder Image">
+    </div>
+</div>
+
+</body>
+</html>

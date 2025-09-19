@@ -1,0 +1,69 @@
+ <!-- Styled Buttons – Create 3 different buttons with unique colors and hover effects (e.g., 
+color change or size change on hover). --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+            gap: 20px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        /* Button 1: Solid Color with Color Change on Hover */
+        .btn-primary {
+            background-color: #007BFF;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Button 2: Gradient Background with Scale Effect on Hover */
+        .btn-secondary {
+            background-image: linear-gradient(45deg, #1A1A1A, #333333);
+        }
+        .btn-secondary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Button 3: Outline Button with Background Fill on Hover */
+        .btn-tertiary {
+            background-color: transparent;
+            color: #28a745;
+            border: 2px solid #28a745;
+        }
+        .btn-tertiary:hover {
+            background-color: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<button class="button btn-primary">Button 1</button>
+<button class="button btn-secondary">Button 2</button>
+<button class="button btn-tertiary">Button 3</button>
+
+</body>
+</html>
